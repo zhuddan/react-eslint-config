@@ -42,6 +42,7 @@ function coreImportKeys(ctx: Ctx): string[] {
   return [
     'js',
     'stylistic',
+    'eslintReact',
     'reactHooks',
     'reactRefresh',
     'eslintConfig',
@@ -152,10 +153,12 @@ function renderCore(ctx: Ctx): string {
   const plugins = ctx.registerReact
     ? `{
       '@stylistic': stylistic,
+      '@eslint-react': eslintReact,
       react,
     }`
     : `{
       '@stylistic': stylistic,
+      '@eslint-react': eslintReact,
     }`
   return `  // ---------------------- TypeScript / JavaScript / JSX ----------------------
   {

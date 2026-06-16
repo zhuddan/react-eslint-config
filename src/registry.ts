@@ -1,5 +1,6 @@
 // import key -> import 语句（输出顺序即此对象的定义顺序，已按模块路径排序）
 export const IMPORTS: Record<string, string> = {
+  eslintReact: "import eslintReact from '@eslint-react/eslint-plugin'",
   js: "import js from '@eslint/js'",
   stylistic: "import stylistic from '@stylistic/eslint-plugin'",
   nextVitals: "import nextVitals from 'eslint-config-next/core-web-vitals'",
@@ -18,6 +19,7 @@ export const IMPORTS: Record<string, string> = {
 
 // import key -> npm 包名（用于按需推导依赖）
 export const IMPORT_DEPS: Record<string, string> = {
+  eslintReact: '@eslint-react/eslint-plugin',
   js: '@eslint/js',
   stylistic: '@stylistic/eslint-plugin',
   nextVitals: 'eslint-config-next',
