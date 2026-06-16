@@ -1,0 +1,27 @@
+{
+  "name": "@zd~/react-eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "bin/index.mjs",
+  "files": [
+    "bin",
+    "eslint.next.config.js",
+    "eslint.vite.config.js",
+    "next.deps.json",
+    "vite.deps.json"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.2",
+  "devDependencies": {
+    "@jsdevtools/version-bump-prompt": "^6.1.0"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.5.1"
+  }
+}
