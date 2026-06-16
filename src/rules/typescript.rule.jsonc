@@ -17,7 +17,7 @@
     "objects": "always-multiline",
     "imports": "always-multiline",
     "exports": "always-multiline",
-    "functions": "never",
+    "functions": "never"
   }],
   // 对象花括号内部加空格：{ a: 1 }
   "@stylistic/object-curly-spacing": ["error", "always"],
@@ -43,7 +43,7 @@
     "ObjectExpression": { "multiline": true, "consistent": true },
     "ObjectPattern": { "multiline": true, "consistent": true },
     "ImportDeclaration": { "multiline": true, "consistent": true },
-    "ExportDeclaration": { "multiline": true, "consistent": true },
+    "ExportDeclaration": { "multiline": true, "consistent": true }
   }],
   // 函数参数换行保持一致
   "@stylistic/function-paren-newline": ["error", "consistent"],
@@ -82,13 +82,13 @@
     // 允许函数参数以下划线开头
     "argsIgnorePattern": "^_",
     // 捕获错误变量以下划线开头时忽略
-    "caughtErrorsIgnorePattern": "^_",
+    "caughtErrorsIgnorePattern": "^_"
   }],
   // 强制类型导入：import type { Foo } from '...'
   "@typescript-eslint/consistent-type-imports": ["error", {
     "prefer": "type-imports",
     "disallowTypeAnnotations": true,
-    "fixStyle": "separate-type-imports",
+    "fixStyle": "separate-type-imports"
   }],
 
   // ----------- JSX 排版（@stylistic/jsx-*） -----------
@@ -111,15 +111,15 @@
     "arrow": "parens-new-line",
     "condition": "parens-new-line",
     "logical": "parens-new-line",
-    "prop": "parens-new-line",
+    "prop": "parens-new-line"
   }],
   // JSX 标签内前后空格规范
   "@stylistic/jsx-tag-spacing": ["error", {
     "closingSlash": "never",
     "beforeSelfClosing": "always",
     "afterOpening": "never",
-    "beforeClosing": "never",
+    "beforeClosing": "never"
   }],
   // 禁止 JSX 子元素之间多余空格
-  "@stylistic/jsx-child-element-spacing": "error",
+  "@stylistic/jsx-child-element-spacing": "error"
 }

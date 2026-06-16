@@ -15,14 +15,14 @@
   // AST 选择器：匹配来自 lucide-react 且不以 Icon 结尾的导入成员
   "no-restricted-syntax": ["error", {
     "selector": "ImportDeclaration[source.value='lucide-react'] > ImportSpecifier[imported.name=/^(?!.*Icon$).*$/]",
-    "message": "从 'lucide-react' 导入图标时，必须使用以 'Icon' 结尾的成员（例如：使用 'PiIcon' 而不是 'Pi'）。",
+    "message": "从 'lucide-react' 导入图标时，必须使用以 'Icon' 结尾的成员（例如：使用 'PiIcon' 而不是 'Pi'）。"
   }],
   // 通过导入名约束：同样强制 lucide-react 图标必须以 Icon 结尾
   "no-restricted-imports": ["error", {
     "paths": [{
       "name": "lucide-react",
       "importNames": ["/^(?!.*Icon$).*$/"],
-      "message": "从 'lucide-react' 导入图标时，必须使用以 'Icon' 结尾的成员名（例如：使用 'PiIcon' 而不是 'Pi'）。",
-    }],
-  }],
+      "message": "从 'lucide-react' 导入图标时，必须使用以 'Icon' 结尾的成员名（例如：使用 'PiIcon' 而不是 'Pi'）。"
+    }]
+  }]           
 }

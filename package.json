@@ -11,22 +11,36 @@
   "packageManager": "pnpm@10.6.2",
   "scripts": {
     "build": "tsup",
-    "prepack": "tsup"
+    "prepack": "tsup",
+    "eslint": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@clack/prompts": "^1.5.1",
+    "@eslint/js": "^10.0.1",
     "@jsdevtools/version-bump-prompt": "^6.1.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^25.9.3",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-format": "^2.0.1",
+    "eslint-plugin-jsonc": "^3.2.0",
+    "eslint-plugin-mdx": "^3.7.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "eslint-plugin-yml": "^3.4.0",
+    "globals": "^17.6.0",
     "jsonc-parser": "^3.3.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "tsup": "^8.5.1",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.2",
+    "yaml-eslint-parser": "^2.0.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

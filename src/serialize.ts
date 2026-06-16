@@ -63,7 +63,7 @@ export function serialize(v: JsonValue, indent = 0): string {
     return `[\n${items.join(',\n')},\n${pad}]`
   }
   const items = Object.keys(v).map(
-    (k) => `${padIn}${quoteKey(k)}: ${serialize(v[k], indent + 2)}`,
+    (k) => `${padIn}${quoteKey(k)}: ${serialize(v[k], indent + 2)}`
   )
   return `{\n${items.join(',\n')},\n${pad}}`
 }

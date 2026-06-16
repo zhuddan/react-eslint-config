@@ -10,7 +10,7 @@
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
-    "noEmit": true,
+    "noEmit": true
   },
   "include": ["src", "bin", "tsup.config.ts"]
 }

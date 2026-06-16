@@ -7,19 +7,19 @@
       {
         // 导出函数必须 async
         "selector": ":matches(ExportNamedDeclaration, ExportDefaultDeclaration) > FunctionDeclaration[async=false], ExportNamedDeclaration > VariableDeclaration > VariableDeclarator > ArrowFunctionExpression[async=false]",
-        "message": "Service 层导出的函数必须声明为 async (异步)",
+        "message": "Service 层导出的函数必须声明为 async (异步)"
       },
       {
         // 导出函数必须含 try-catch
         "selector": ":matches(ExportNamedDeclaration, ExportDefaultDeclaration) > FunctionDeclaration:not(:has(TryStatement)), ExportNamedDeclaration > VariableDeclaration > VariableDeclarator > ArrowFunctionExpression:not(:has(TryStatement))",
-        "message": "Service 层导出的函数必须包含 try-catch 结构",
+        "message": "Service 层导出的函数必须包含 try-catch 结构"
       },
       {
         // 导出的异步函数命名必须以 Service 结尾
         "selector": "ExportNamedDeclaration > FunctionDeclaration[async=true]:not([id.name=/Service$/]), ExportNamedDeclaration > VariableDeclaration > VariableDeclarator:not([id.name=/Service$/]) > ArrowFunctionExpression[async=true], ExportNamedDeclaration > VariableDeclaration > VariableDeclarator:not([id.name=/Service$/]) > FunctionExpression[async=true], ExportDefaultDeclaration > FunctionDeclaration[async=true][id!=null]:not([id.name=/Service$/])",
-        "message": "Service 层导出的异步函数必须以 \"Service\" 结尾 (例如: getUserService)",
-      },
-    ],
+        "message": "Service 层导出的异步函数必须以 \"Service\" 结尾 (例如: getUserService)"
+      }
+    ]
   },
 
   // *.action.ts —— Action 层：Server Action
@@ -28,8 +28,8 @@
       {
         // 导出的异步函数命名必须以 Action 结尾
         "selector": "ExportNamedDeclaration > FunctionDeclaration[async=true]:not([id.name=/Action$/]), ExportNamedDeclaration > VariableDeclaration > VariableDeclarator:not([id.name=/Action$/]) > ArrowFunctionExpression[async=true], ExportNamedDeclaration > VariableDeclaration > VariableDeclarator:not([id.name=/Action$/]) > FunctionExpression[async=true], ExportDefaultDeclaration > FunctionDeclaration[async=true][id!=null]:not([id.name=/Action$/])",
-        "message": "Action 层导出的异步函数必须以 \"Action\" 结尾 (例如: submitFormAction)",
-      },
-    ],
-  },
+        "message": "Action 层导出的异步函数必须以 \"Action\" 结尾 (例如: submitFormAction)"
+      }
+    ]
+  }
 }

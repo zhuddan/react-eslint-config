@@ -4,7 +4,7 @@
   // 没有子节点的组件强制自闭合：<Comp /> 而不是 <Comp></Comp>
   "react/self-closing-comp": ["error", {
     "component": true, // React 组件自闭合
-    "html": false, // 原生 HTML 标签不强制
+    "html": false // 原生 HTML 标签不强制
   }],
   // 禁止使用 dangerouslySetInnerHTML
   "react/no-danger": ["error", {}],
@@ -12,7 +12,7 @@
   "react/jsx-curly-brace-presence": ["error", {
     "props": "never",
     "children": "never",
-    "propElementValues": "always", // 属性值是 JSX 元素时要求花括号
-  }],
+    "propElementValues": "always" // 属性值是 JSX 元素时要求花括号
+  }]
   
 }

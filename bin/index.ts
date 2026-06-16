@@ -137,7 +137,7 @@ async function main(): Promise<void> {
   // 5. 输出总结
   const frameworkLabel = framework === 'next' ? 'Next.js' : framework === 'vite' ? 'Vite' : '通用（recommended 预设）'
   const featureLabel = selected.length ? selected.join(' / ') : '无'
-  p.log.success(`框架：${frameworkLabel}　格式化：${featureLabel}`)
+  p.log.success(`框架：${frameworkLabel} 格式化：${featureLabel}`)
   p.log.success('已生成：eslint.config.mjs')
 
   if (added.length) {

@@ -17,5 +17,5 @@
   // 冒号前无空格、后有空格
   "jsonc/key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
   // 逗号放在行尾
-  "jsonc/comma-style": ["error", "last"],
+  "jsonc/comma-style": ["error", "last"]
 }

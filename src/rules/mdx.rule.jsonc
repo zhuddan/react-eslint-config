@@ -6,7 +6,7 @@
     // 禁止 var，统一 let/const
     "no-var": "error",
     // 不会重新赋值的变量强制 const
-    "prefer-const": "error",
+    "prefer-const": "error"
   },
 
   // .md / .mdx 文本：交给 Prettier 排版，并关闭会冲突的 @stylistic 规则
@@ -17,7 +17,7 @@
       "singleQuote": true,
       // 与 @stylistic/semi: 'never' 一致，避免 MDX 代码块循环修复
       "semi": false,
-      "endOfLine": "auto",
+      "endOfLine": "auto"
     }],
     "@stylistic/indent": "off",
     "@stylistic/quotes": "off",
@@ -27,7 +27,7 @@
     "@stylistic/array-bracket-newline": "off",
     "@stylistic/object-curly-spacing": "off",
     "@stylistic/jsx-quotes": "off",
-    "@stylistic/jsx-wrap-multilines": "off",
+    "@stylistic/jsx-wrap-multilines": "off"
   },
 
   // MDX 虚拟文件覆盖的「基础项」。
@@ -52,6 +52,6 @@
     "react/no-danger": "off",
     "@stylistic/jsx-child-element-spacing": "off",
     "react/no-deprecated": "off",
-    "react/display-name": "off",
-  },
+    "react/display-name": "off"
+  }
 }
