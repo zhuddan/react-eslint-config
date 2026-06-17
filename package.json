@@ -1,6 +1,6 @@
 {
   "name": "@zdecode/react-eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "交互式生成自包含的 ESLint flat config（next / vite / 通用）",
   "bin": "dist/index.js",
   "files": [
