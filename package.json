@@ -12,7 +12,8 @@
     "dev": "tsup --watch",
     "build": "tsup",
     "prepack": "tsup",
-    "eslint": "eslint . --fix"
+    "eslint": "eslint . --fix",
+    "tag": "bump patch --tag --commit --push"
   },
   "keywords": [],
   "author": "",
