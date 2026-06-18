@@ -126,6 +126,13 @@ async function main(): Promise<void> {
     sortedDevDeps[key] = devDeps[key]
   userPkg.devDependencies = sortedDevDeps
 
+  const scripts = (userPkg.scripts ?? {}) as Record<string, string>
+  if (!('lint' in scripts))
+    scripts.lint = 'eslint .'
+  if (!('lint:fix' in scripts))
+    scripts['lint:fix'] = 'eslint . --fix'
+  userPkg.scripts = scripts
+
   const s = p.spinner()
   s.start('正在写入文件')
   fs.writeFileSync(path.join(cwd, 'eslint.config.mjs'), content)
